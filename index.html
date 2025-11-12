@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova - Inovasi Teknologi Masa Depan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-slate-900 text-white fixed w-full top-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <i class="fas fa-rocket text-cyan-400 text-2xl mr-2"></i>
+            <span class="text-xl font-bold">TechNova</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-cyan-400 transition">Beranda</a>
+            <a href="#features" class="hover:text-cyan-400 transition">Fitur</a>
+            <a href="#about" class="hover:text-cyan-400 transition">Tentang</a>
+            <a href="#contact" class="hover:text-cyan-400 transition">Kontak</a>
+          </div>
+
+          <!-- Burger Button -->
+          <button id="burger" class="md:hidden text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <a href="#home" class="block py-2 hover:text-cyan-400 transition"
+            >Beranda</a
+          >
+          <a href="#features" class="block py-2 hover:text-cyan-400 transition"
+            >Fitur</a
+          >
+          <a href="#about" class="block py-2 hover:text-cyan-400 transition"
+            >Tentang</a
+          >
+          <a href="#contact" class="block py-2 hover:text-cyan-400 transition"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-16 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen flex items-center"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in"
+          >
+            Wujudkan Masa Depan Digital Anda
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            Solusi teknologi terdepan untuk mengakselerasi bisnis Anda menuju
+            era digital dengan inovasi dan keunggulan yang tak tertandingi
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition transform hover:scale-105"
+            >
+              Mulai Sekarang
+            </a>
+            <a
+              href="#features"
+              class="bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 text-white px-8 py-3 rounded-lg text-lg font-semibold transition"
+            >
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            Fitur Unggulan Kami
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Teknologi terbaik untuk solusi bisnis modern
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <div
+              class="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-cloud text-cyan-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">
+              Cloud Computing
+            </h3>
+            <p class="text-gray-600">
+              Infrastruktur cloud yang scalable dan aman untuk mendukung
+              pertumbuhan bisnis Anda tanpa batas dengan performa optimal.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <div
+              class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-shield-alt text-purple-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">
+              Keamanan Maksimal
+            </h3>
+            <p class="text-gray-600">
+              Sistem keamanan berlapis dengan enkripsi tingkat enterprise untuk
+              melindungi data bisnis Anda dari ancaman cyber.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
+          >
+            <div
+              class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-chart-line text-green-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4">
+              Analytics & AI
+            </h3>
+            <p class="text-gray-600">
+              Analisis data real-time dengan teknologi AI untuk memberikan
+              insight bisnis yang actionable dan prediktif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+              Tentang TechNova
+            </h2>
+            <p class="text-gray-600 mb-4 text-lg">
+              TechNova adalah perusahaan teknologi terdepan yang berfokus pada
+              transformasi digital untuk bisnis di berbagai industri. Dengan
+              pengalaman lebih dari 10 tahun, kami telah membantu ratusan
+              perusahaan mencapai tujuan mereka.
+            </p>
+            <p class="text-gray-600 mb-6 text-lg">
+              Tim kami terdiri dari para ahli teknologi yang passionate dan
+              berpengalaman dalam menghadirkan solusi inovatif yang disesuaikan
+              dengan kebutuhan unik setiap klien.
+            </p>
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div class="p-4">
+                <div class="text-3xl font-bold text-cyan-600">500+</div>
+                <div class="text-gray-600 text-sm">Klien</div>
+              </div>
+              <div class="p-4">
+                <div class="text-3xl font-bold text-purple-600">10+</div>
+                <div class="text-gray-600 text-sm">Tahun</div>
+              </div>
+              <div class="p-4">
+                <div class="text-3xl font-bold text-green-600">98%</div>
+                <div class="text-gray-600 text-sm">Kepuasan</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-cyan-400 to-purple-600 rounded-xl h-96 flex items-center justify-center text-white"
+          >
+            <i class="fas fa-laptop-code text-9xl opacity-20"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            Hubungi Kami
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Siap untuk memulai transformasi digital? Hubungi kami sekarang!
+          </p>
+        </div>
+
+        <form class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="name"
+              >Nama Lengkap</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="nama@email.com"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="phone"
+              >Nomor Telepon</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="08xx-xxxx-xxxx"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-gray-700 font-semibold mb-2" for="message"
+              >Pesan</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              placeholder="Ceritakan kebutuhan Anda..."
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-purple-700 transition transform hover:scale-105"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-rocket text-cyan-400 text-2xl mr-2"></i>
+              <span class="text-xl font-bold">TechNova</span>
+            </div>
+            <p class="text-gray-400">
+              Inovasi teknologi untuk masa depan yang lebih baik.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Kontak</h4>
+            <p class="text-gray-400 mb-2">
+              <i class="fas fa-envelope mr-2"></i>info@technova.com
+            </p>
+            <p class="text-gray-400 mb-2">
+              <i class="fas fa-phone mr-2"></i>+62 812-3456-7890
+            </p>
+            <p class="text-gray-400">
+              <i class="fas fa-map-marker-alt mr-2"></i>Jakarta, Indonesia
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-2xl hover:text-cyan-400 transition"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-cyan-400 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-cyan-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-cyan-400 transition"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 TechNova. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Burger Menu Toggle
+      const burger = document.getElementById("burger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      burger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const icon = burger.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-times");
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          const icon = burger.querySelector("i");
+          icon.classList.add("fa-bars");
+          icon.classList.remove("fa-times");
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
